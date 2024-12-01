@@ -1,0 +1,111 @@
+* { 
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Menü sola yaslandı */
+    background: #181616;
+    margin: 0;
+    margin-top: 20px; /* Sayfanın üst kısmına 20px boşluk ekler */
+}
+
+nav {
+    width: 180px; /* Menü her zaman açık */
+    height: 100vh; /* Sayfa boyunca uzandı */
+    background: #1b1a1a;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: inset 0 0 4px rgba(255, 255, 255, .1),
+                inset 3px 3px 8px rgba(255, 255, 255, .1);
+    position: fixed; /* Menü sayfada sabit kalacak */
+    left: 0; /* Menüyü sola yasla */
+    top: 0; /* Üstten başlasın */
+}
+
+nav li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Metni sola hizala */
+    width: 100%;
+    height: 70px;
+    color: #ffffff;
+    opacity: .9;
+    transition: .4s;
+    padding-left: 20px;
+}
+
+nav li:hover {
+    color: #0cebc5;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+nav .brand {
+    color: #0cebc5;
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+nav li i {
+    font-size: 26px !important;
+    margin-right: 15px; /* İkona biraz boşluk bırak */
+}
+
+nav li a {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+label {
+    display: none; /* Menü açma/kapama butonunu kaldır */
+}
+
+/* Sayfa genel stili */
+body {
+    margin: 0;
+    height: 100vh; /* Tam ekran yüksekliği */
+    display: flex;
+    justify-content: center; /* Yatayda ortalar */
+    align-items: flex-start; /* Yukarıdan başlatır */
+    background-color: #f4f4f4; /* Arka plan rengi */
+}
+
+/* Form kapsayıcı */
+#form-container {
+    width: 600px; /* Genişlik */
+    background: #ffffff; /* Arka plan rengi */
+    padding: 20px; /* İçerik boşluğu */
+    border-radius: 10px; /* Köşe yuvarlama */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+    margin-top: 50px; /* Yukarıdan boşluk */
+    text-align: center; /* İçerik hizalaması */
+    margin-left: 150px; 
+}
+/* CARDS */
+.card-container {
+    display: flex;
+    justify-content: flex-start; /* Kartlar arasına boşluk bırakmadan sola hizala */
+    gap: 15px; /* Kartlar arasına 15px boşluk ekler */
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 50px; /* Kartlar için üstten 50px boşluk bırakır */
+    margin-left: 150px; /* Kartlar için soldan 150px boşluk bırakır */
+}
+
+.card {
+    width: 300px;
+    height: 150px;
+    flex: 0 0 auto;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+}
+

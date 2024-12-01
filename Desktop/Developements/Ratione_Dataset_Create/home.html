@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code With Hossein</title>
+
+    <!-- CSS Dosyası -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <a class="brand fa fa-coffee" href="#"></a>
+    <ul>
+        <li onclick="showCards()">
+            <i class="fa fa-home"></i>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <i class="fa fa-user"></i>
+            <a href="#">Profile</a>
+        </li>
+        <li onclick="showForm()">
+            <i class="fa fa-heart"></i>
+            <a href="#">Dataset</a>
+        </li>
+        <li>
+            <i class="fa fa-unlock-alt"></i>
+            <a href="#">Security</a>
+        </li>
+        <li>
+            <i class="fa fa-cog"></i>
+            <a href="#">Settings</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Form Alanı -->
+<div id="form-container">
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input placeholder="E mail Adresi" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Boy</label>
+            <input placeholder="Boy" type="text" class="form-control" id="exampleInputHeight">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputWeight" class="form-label">Kilo</label>
+            <input placeholder="Kilo" type="text" class="form-control" id="exampleInputWeight">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputAge" class="form-label">Yaş</label>
+            <input placeholder="Yaş" type="text" class="form-control" id="exampleInputAge">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputMedication" class="form-label">Kullanılan ilaç</label>
+            <input placeholder="Kullanılan ilaç" type="text" class="form-control" id="exampleInputMedication">
+        </div>
+    </form>
+</div>
+
+<!-- Kartların bulunduğu alan -->
+<div id="content">
+    <div id="cards" class="card-container">
+        <div class="card text-white bg-success mb-3">
+            <div class="card-header">Kullanıcı Adı</div>
+            <div class="card-body">
+                <h5 class="card-title">Doktor Ali Rıza Bey Hoşgeldiniz.</h5>
+            </div>
+        </div>
+        <div class="card text-white bg-success mb-3">
+            <div class="card-header">Kaydedilen Veri Sayısı</div>
+            <div class="card-body">
+                <h5 class="card-title">Şu ana kadar 595 adet hasta verisi girdiniz.</h5>
+            </div>
+        </div>
+        <div class="card text-white bg-success mb-3">
+            <div class="card-header">Zıkkım</div>
+            <div class="card-body">
+                <h5 class="card-title">Buradada bişeyler gösteririm.</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript Dosyası -->
+<script src="app.js"></script>
+
+</body>
+</html>
